@@ -1,8 +1,12 @@
+:root{
+  --rating-color:#ffc908;
+  --main-color:green;
+  --shadow: ;
+  --light-color:rgba(185, 172, 172, 0.671) ;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family:"Amazon Ember", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +14,59 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.cursor-pointer{
+cursor: pointer;
+}
+.product:hover{
+  box-shadow:var(--shadow);
+border: 2px solid green;
+}
+.product .btn{
+  transition: transform 1s , opacity 1s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+.product:hover .btn{
+  opacity: 1;
+  transform: translateY(0%);
+  background-color: var(--main-color);
+}
+.rating-color{
+  color: gold;
+}
+.bg-main{
+  background-color: var(--main-color);
+}
+.bg-main-light{
+  background-color: var(--light-color);
+}
+.btn-cart{
+  border: 1px solid var(--main-color);
+}
+
+.btn-cart:hover{
+  border: 1px solid var(--main-color) !important;
+}
+.network-status{
+position: fixed;
+bottom:  40px;
+right:  40px;
+background-color: wheat;
+padding: 2rem;
+color:var(--main-color)
+}
+.loading{
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  
 }

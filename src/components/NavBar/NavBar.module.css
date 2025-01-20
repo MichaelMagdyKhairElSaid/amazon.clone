@@ -1,0 +1,137 @@
+.NavBarColor{
+    background-color: rgb(19, 25, 33);
+    color: white;
+}
+.defaultBtn{
+    border: 0px;
+}
+.main_color{
+   background-color:  #febd69;
+   :hover{
+    background-color: #f3a847;
+   }
+}
+.logo {
+    width: 100px;
+}
+
+.currentLocationBox{
+    line-height: 14px;
+    p{
+        font-size: 12px;
+        opacity: 80%;
+        margin: 0px;
+    }
+    span{
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+
+.Dropdown_Menu {
+    width: 850px;
+    select{
+         border: 1px solid transparent;
+    width: 50px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+    /* background-color: hsl(0, 0%, 90%); */
+    box-sizing: content-box;
+    border:transparent 3px solid ;
+    }
+    select:focus{
+        border:orange 3px solid ;
+    }
+    option a{
+        background-color: white;
+    }
+    button{
+        padding: 0px 15px 0px 15px ;
+        border: 0px;
+        background-color: white;
+        border-radius: 00px 5px 5px 0px;
+        background-color:  #febd69;
+        
+    }
+    button:hover{
+     background-color: #f3a847;
+    }
+    
+}
+
+.languageSelector{
+    position: relative;
+  display: flex;
+  align-items:end;
+  justify-content: center;
+  padding: 0px 9px 5px 9px;
+  .lang{
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+}
+
+.flag{
+    width: 24px;
+    position: relative;
+    display: inline-block;
+    height: 18px;
+    /* margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 3px; */
+    background-position: -144px -202px; /* spreadsheet start image */
+    background-image: url(../../assets/AllCountries.png);
+    transform: scale(.9);
+  }
+
+.flag_us{
+    background-position: 0 -130px;
+}
+
+.tooltips{
+    position: absolute;
+    border-radius: 5px;
+    padding: 8px;
+    width: 210px;
+    height: auto;
+    background-color: white;
+    color: black;
+    top: 45px;
+    right: -90px;
+    ul{
+        list-style-type: none;
+        li{
+            input {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+              
+                border-radius: 50%;
+                width: 16px;
+                height: 16px;
+              
+                border: 2px solid #999;
+                transition: 0.2s all linear;
+                margin-right: 5px;
+              
+                position: relative;
+                top: 4px;
+              }
+              
+              input:checked {
+                border: 5px solid #febd69;
+                outline: unset !important /* I added this one for Edge (chromium) support */
+              }
+
+              label:hover{
+                text-decoration: underline;
+                color: #f3a847;
+              }
+             
+            
+        }
+    }    
+    p{font-size: 14px;}
+    
+}
